@@ -1,0 +1,12 @@
+    Options -Multiviews
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    RewriteBase /video/public
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    #ilk kural
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
