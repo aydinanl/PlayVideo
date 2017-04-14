@@ -4,7 +4,7 @@
  * The default home controller, called when no controller/method has been passed
  * to the application.
  */
-class Kategori extends Controller
+class Video extends Controller
 {
 
     /**
@@ -12,19 +12,18 @@ class Kategori extends Controller
      *
      * @return void
      */
-    public function index($kategoriID="",$kategoriAdi="")
+    public function index($videoID="",$videoAdi="")
     {
         //$user = $this->model('user');
         //$user->name = $name;
-        if(empty($kategoriID)){
-            //Kategori ID yoksa Ana sayfaya yönlendir.
+        if(empty($videoID)){
+            //Video ID yoksa Ana sayfaya yönlendir.
             header('location: '.URL);
         }
         //Load views
         require VIEW_PATH . "templates/header.php";
-        require VIEW_PATH . "kategori/index.php";
+        require VIEW_PATH . "video/index.php";
         require VIEW_PATH . "templates/footer.php";
-
-
     }
+
 }

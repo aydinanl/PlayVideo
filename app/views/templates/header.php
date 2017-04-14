@@ -25,7 +25,7 @@
                 <li><a href="#">anasayfa</a></li>
                 <li><a href="#">kategoriler <i class="fa fa-angle-down"></i></a>
                     <ul>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i> Macera</a></li>
+                        <li><a href="<?php echo URL; ?>/Kategori/0/Macera"><i class="fa fa-chevron-right"></i> Macera</a></li>
                         <li><a href="#"><i class="fa fa-chevron-right"></i> Komedi</a></li>
                         <li><a href="#"><i class="fa fa-chevron-right"></i> Dram</a></li>
                         <li><a href="#"><i class="fa fa-chevron-right"></i> Müzik</a></li>

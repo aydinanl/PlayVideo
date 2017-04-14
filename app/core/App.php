@@ -36,7 +36,7 @@ class App{
         //url segment 2 : method
         if(isset($url[1])){
             if(method_exists($this->controller,$url[1])){
-                echo $url[1] . " methodu bulundu.<br>";
+                //echo $url[1] . " methodu bulundu.<br>";
                 $this->method = $url[1];
                 unset($url[1]);
 
