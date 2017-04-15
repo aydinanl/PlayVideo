@@ -16,7 +16,7 @@ class Controller
         }catch (PDOException $e) {
             die($e->getMessage());
         }
-//Karakter Sorunu
+        //Karakter Sorunu
         $this->db->query("SET NAMES 'utf8'");
         $this->db->query("SET CHARACTER SET 'utf8'");
         $this->db->query("SET COLLATION_CONNECTION = 'utf8_turkish_ci' ");
