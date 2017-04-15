@@ -19,6 +19,9 @@ class Home extends Controller
         $user->name = $name;
         echo $name;
         */
+        $system = $this->model('System');
+        $latestVideos = $system->getLastestVideos();
+
 
         //Load views
         require VIEW_PATH . "templates/header.php";
