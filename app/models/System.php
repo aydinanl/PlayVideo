@@ -10,10 +10,6 @@ class System
             exit('Database connection could not be established.');
         }
     }
-    public function getLastestVideos(){
-        $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_date");
-        return $show;
-    }
     public function getCategories(){
         $get = $this->db->query("SELECT * FROM as_categories");
         return $get;
