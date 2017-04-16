@@ -14,8 +14,8 @@ class Kategori extends Controller
      */
     public function index($kategoriID="",$kategoriAdi="")
     {
-        //$user = $this->model('user');
-        //$user->name = $name;
+        $system = $this->model('System');
+        $categories     = $system->getCategories();
         if(empty($kategoriID)){
             //Kategori ID yoksa Ana sayfaya yönlendir.
             header('location: '.URL);

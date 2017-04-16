@@ -6,8 +6,8 @@ class Video extends Controller
 
     public function index($videoID="",$videoAdi="")
     {
-        //$user = $this->model('user');
-        //$user->name = $name;
+        $system = $this->model('System');
+        $categories     = $system->getCategories();
         if(empty($videoID)){
             //Video ID yoksa Ana sayfaya yönlendirmektedir.
             header('location: '.URL);

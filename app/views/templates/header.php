@@ -20,15 +20,19 @@
 <header>
     <div id="header">
         <div class="container">
-            <div class="logo"><a href="#"><img src="<?php echo URL; ?>/assets/img/logo.png" alt="logo" /></a></div>
+            <div class="logo"><a href="<?php echo URL ?>"><img src="<?php echo URL; ?>/assets/img/logo.png" alt="logo" /></a></div>
             <ul class="menu">
-                <li><a href="#">anasayfa</a></li>
+                <li><a href="<?php echo URL ?>">anasayfa</a></li>
                 <li><a href="#">kategoriler <i class="fa fa-angle-down"></i></a>
                     <ul>
-                        <li><a href="<?php echo URL; ?>/Kategori/1/Macera"><i class="fa fa-chevron-right"></i> Macera</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i> Komedi</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i> Dram</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i> Müzik</a></li>
+                        <?php
+                        while($categori = $categories->fetchObject()){
+                            ?>
+                            <li><a href="<?php echo URL . "/Kategori/" . $categori->category_id . "/" . $categori->category_name; ?>"><i class="fa fa-chevron-right"></i> <?php echo $categori->category_name ?></a></li>
+                        <?php
+                        }
+                        ?>
+
                     </ul>
                 </li>
                 <li><a href="#">çok izlenenler</a></li>

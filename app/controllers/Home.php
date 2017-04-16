@@ -1,9 +1,5 @@
 <?php
 
-/**
- * The default home controller, called when no controller/method has been passed
- * to the application.
- */
 class Home extends Controller
 {
     /**
@@ -20,8 +16,8 @@ class Home extends Controller
         echo $name;
         */
         $system = $this->model('System');
-        $latestVideos = $system->getLastestVideos();
-
+        $latestVideos   = $system->getLastestVideos();
+        $categories     = $system->getCategories();
 
         //Load views
         require VIEW_PATH . "templates/header.php";

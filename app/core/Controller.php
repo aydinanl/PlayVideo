@@ -22,7 +22,7 @@ class Controller
         $this->db->query("SET COLLATION_CONNECTION = 'utf8_turkish_ci' ");
     }
 
-    public  function model($model){
+    public function model($model){
         //echo $model;
         require_once '../app/models/' . $model . '.php';
         return new $model($this->db);

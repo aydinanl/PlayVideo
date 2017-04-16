@@ -14,4 +14,8 @@ class System
         $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_date");
         return $show;
     }
+    public function getCategories(){
+        $get = $this->db->query("SELECT * FROM as_categories");
+        return $get;
+    }
 }
