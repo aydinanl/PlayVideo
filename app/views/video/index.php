@@ -16,7 +16,7 @@
 				</div>
 				<div class="playvideo">
 					<div class="video">
-						<iframe src="https://www.youtube.com/embed/fO6o4Lutj20" frameborder="0" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/<?php echo $movie_url ?>" frameborder="0" allowfullscreen></iframe>
 						<div class="reklamvideon">
 							<div class="reklamkapat"><i class="fa fa-times"></i></div>
 							<div class="reklamkod">
