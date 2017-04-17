@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Comments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Home.php" afterPath="$PROJECT_DIR$/app/controllers/Home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Comments.php" afterPath="$PROJECT_DIR$/app/models/Comments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.php" afterPath="$PROJECT_DIR$/app/views/home/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,25 +54,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="289" column="53" lean-forward="false" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="556">
+              <caret line="283" column="87" lean-forward="false" selection-start-line="283" selection-start-column="87" selection-end-line="283" selection-end-column="87" />
+              <folding>
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comments.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Comments.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="123" lean-forward="false" selection-start-line="14" selection-start-column="123" selection-end-line="14" selection-end-column="123" />
+              <caret line="14" column="110" lean-forward="false" selection-start-line="14" selection-start-column="110" selection-end-line="14" selection-end-column="110" />
               <folding>
-                <marker date="1492446293000" expanded="true" signature="304:401" ph="SELECT * FRO... as_comments" />
-                <marker date="1492446293000" expanded="true" signature="304:411" ph="SELECT * FRO... as_comments" />
-                <marker date="1492446293000" expanded="true" signature="304:430" ph="SELECT * FRO... as_comments" />
+                <marker date="1492448472000" expanded="true" signature="304:453" ph="SELECT * FRO... as_comments" />
+                <marker date="1492448472000" expanded="true" signature="304:463" ph="SELECT * FRO... as_comments" />
+                <marker date="1492448472000" expanded="true" signature="304:482" ph="SELECT * FRO... as_comments" />
               </folding>
             </state>
           </provider>
@@ -137,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/views/templates/footer.php" />
         <option value="$PROJECT_DIR$/app/models/System.php" />
         <option value="$PROJECT_DIR$/app/controllers/Home.php" />
-        <option value="$PROJECT_DIR$/app/models/Comments.php" />
         <option value="$PROJECT_DIR$/app/views/home/index.php" />
+        <option value="$PROJECT_DIR$/app/models/Comments.php" />
       </list>
     </option>
   </component>
@@ -503,7 +507,7 @@
       <workItem from="1492241466955" duration="3293000" />
       <workItem from="1492250672148" duration="1896000" />
       <workItem from="1492357077685" duration="5465000" />
-      <workItem from="1492440945209" duration="3627000" />
+      <workItem from="1492440945209" duration="4702000" />
     </task>
     <task id="LOCAL-00001" summary="Header, kategoriler modeli yazıldı bağlandı.">
       <created>1492359618873</created>
@@ -526,14 +530,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492445371462</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Comments modeli eklendi ve Home View'e son yorumlar bağlandı.">
+      <created>1492446920847</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1492446920847</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45149000" />
+    <option name="totallyTimeSpent" value="46224000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1919" height="1007" extended-state="6" />
+    <frame x="0" y="23" width="1919" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1326585" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -565,7 +576,8 @@
     <MESSAGE value="Header, kategoriler modeli yazıldı bağlandı." />
     <MESSAGE value="Movie tablosu modellendi, ana sayfa için fonksiyonlar yazıldı bağlandı. Ana sayfada bağlananlar : Slider(popüler 6 video), Son Videolar(son 4 video), Sidebar-&gt;Popüler Videolar(popüler 3 video)." />
     <MESSAGE value="Sef Url Fonskiyonu, Düzenlemeler, Video view'i ile modeli arasında çeşitli bağlamalar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sef Url Fonskiyonu, Düzenlemeler, Video view'i ile modeli arasında çeşitli bağlamalar." />
+    <MESSAGE value="Comments modeli eklendi ve Home View'e son yorumlar bağlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments modeli eklendi ve Home View'e son yorumlar bağlandı." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -584,7 +596,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="109" column="56" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,7 +669,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="109" column="56" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -899,20 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="83" lean-forward="false" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
-          <folding>
-            <marker date="1492442159000" expanded="true" signature="302:357" ph="SELECT * FRO... as_movie" />
-            <marker date="1492442159000" expanded="true" signature="465:520" ph="SELECT * FRO... as_movie" />
-            <marker date="1492442159000" expanded="true" signature="628:683" ph="SELECT * FRO... as_movie" />
-            <marker date="1492442159000" expanded="true" signature="790:830" ph="SELECT * FRO... as_movie" />
-            <marker date="1492442159000" expanded="true" signature="790:831" ph="SELECT * FRO... as_movie" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -929,23 +937,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
+    <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="123" lean-forward="false" selection-start-line="14" selection-start-column="123" selection-end-line="14" selection-end-column="123" />
+        <state relative-caret-position="375">
+          <caret line="25" column="83" lean-forward="false" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
           <folding>
-            <marker date="1492446293000" expanded="true" signature="304:401" ph="SELECT * FRO... as_comments" />
-            <marker date="1492446293000" expanded="true" signature="304:411" ph="SELECT * FRO... as_comments" />
-            <marker date="1492446293000" expanded="true" signature="304:430" ph="SELECT * FRO... as_comments" />
+            <marker date="1492442159000" expanded="true" signature="302:357" ph="SELECT * FRO... as_movie" />
+            <marker date="1492442159000" expanded="true" signature="465:520" ph="SELECT * FRO... as_movie" />
+            <marker date="1492442159000" expanded="true" signature="628:683" ph="SELECT * FRO... as_movie" />
+            <marker date="1492442159000" expanded="true" signature="790:830" ph="SELECT * FRO... as_movie" />
+            <marker date="1492442159000" expanded="true" signature="790:831" ph="SELECT * FRO... as_movie" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="289" column="53" lean-forward="false" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="556">
+          <caret line="283" column="87" lean-forward="false" selection-start-line="283" selection-start-column="87" selection-end-line="283" selection-end-column="87" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#main#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="110" lean-forward="false" selection-start-line="14" selection-start-column="110" selection-end-line="14" selection-end-column="110" />
+          <folding>
+            <marker date="1492448472000" expanded="true" signature="304:453" ph="SELECT * FRO... as_comments" />
+            <marker date="1492448472000" expanded="true" signature="304:463" ph="SELECT * FRO... as_comments" />
+            <marker date="1492448472000" expanded="true" signature="304:482" ph="SELECT * FRO... as_comments" />
+          </folding>
         </state>
       </provider>
     </entry>
