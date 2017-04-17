@@ -16,13 +16,14 @@ class Home extends Controller
         echo $name;
         */
         $system = $this->model('System');
-        $movie = $this->model('Movie');
-        $categories     = $system->getCategories();
+        $movie  = $this->model('Movie');
+        $categories = $system->getCategories();
+        $comment    = $this->model('Comments');
 
         $get6PopulerVideos  = $movie->get6PopulerVideos();
         $get3PopulerVideos  = $movie->get3PopulerVideos();
-        $latest4Videos   = $movie->get4LastestVideos();
-
+        $latest4Videos  = $movie->get4LastestVideos();
+        $latestComments = $comment->getLatestComments();
 
         //Load views
         require VIEW_PATH . "templates/header.php";
