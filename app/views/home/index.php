@@ -11,9 +11,9 @@
                         if($count == 0 or $count == 1 or $count==4 or $count == 5){
                         ?>
                         <li class="rbuyuk">
-                            <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_url ?>">
+                            <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_link ?>">
                                 <img src="<?php echo"https://i.ytimg.com/vi/".$popularVideos->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
-                                <div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
+                                <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $popularVideos->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $popularVideos->category_name ?></label></div>
                                 <div class="play"><i class="fa fa-play"></i></div>
                                 <div class="sliderbaslik"><h5><?php echo $popularVideos->movie_name ?></h5></div>
                             </a>
@@ -23,9 +23,9 @@
                             ?>
 
                             <li class="rkucuk">
-                                <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_url ?>">
+                                <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_link ?>">
                                     <img src="<?php echo"https://i.ytimg.com/vi/".$popularVideos->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
-                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
+                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $popularVideos->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $popularVideos->category_name ?></label></div>
                                     <div class="play"><i class="fa fa-play"></i></div>
                                     <div class="sliderbaslik"><h5><?php echo $popularVideos->movie_name ?></h5></div>
                                 </a>
@@ -58,9 +58,9 @@
                             if($countSonIcerik == 0 or $countSonIcerik == 3){
                                 ?>
                                 <div class="rbuyuk">
-                                    <a href="Video/<?php echo $latestVideo->movie_id ."/". $latestVideo->sef_url ?>">
+                                    <a href="Video/<?php echo $latestVideo->movie_id ."/". $latestVideo->sef_link ?>">
                                         <img src="<?php echo"https://i.ytimg.com/vi/".$latestVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
-                                        <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $latestVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
+                                        <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $latestVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $latestVideo->category_name ?></label></div>
                                         <div class="play"><i class="fa fa-play"></i></div>
                                         <div class="sliderbaslik"><h2><?php echo $latestVideo->movie_description ?></h2></div>
                                     </a>
@@ -70,9 +70,9 @@
                                 ?>
                                 <div class="rkucuk">
                                     <a href="#">
-                                        <a href="Video/<?php echo $latestVideo->movie_id ."/". $latestVideo->sef_url ?>">
+                                        <a href="Video/<?php echo $latestVideo->movie_id ."/". $latestVideo->sef_link ?>">
                                             <img src="<?php echo"https://i.ytimg.com/vi/".$latestVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
-                                            <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $latestVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
+                                            <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $latestVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $latestVideo->category_name ?></label></div>
                                             <div class="play"><i class="fa fa-play"></i></div>
                                             <div class="sliderbaslik"><h2><?php echo $latestVideo->movie_description ?></h2></div>
                                     </a>
@@ -86,38 +86,20 @@
 					
 					<div class="kolonbaslik"><h4>AKSİYON</h4> <div class="tumunugor"><a href="#"><text>TÜMÜNÜ GÖR</text></a></div></div>
 					<ul class="konuicerik">
-						<li>
-							<a href="#">
-							<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h3>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h3></div>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-							<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-							<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-							<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>	
-						</li>
+                        <?php
+                        while($aksiyonVideo = $aksiyon->fetchObject()){
+                            ?>
+                            <li>
+                                <a href="Video/<?php echo $aksiyonVideo->movie_id ."/". $aksiyonVideo->sef_link ?>">
+                                    <img src="<?php echo"https://i.ytimg.com/vi/".$aksiyonVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1" style="width: 360px;height: 210px" />
+                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $aksiyonVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $aksiyonVideo->category_name ?></label></div>
+                                    <div class="play"><i class="fa fa-play"></i></div>
+                                    <div class="sliderbaslik"><h3><?php echo $aksiyonVideo->movie_description ?></h3></div>
+                                </a>
+                            </li>
+                        <?php
+                        }
+                        ?>
 					</ul>
 				</div>	
 				<!-- icerik üst sol bitiş -->
@@ -130,9 +112,9 @@
                         while($get3PopulerVideo = $get3PopulerVideos->fetchObject()){
                             ?>
                             <li>
-                                <a href="Video/<?php echo $get3PopulerVideo->movie_id ."/". $get3PopulerVideo->sef_url ?>">
+                                <a href="Video/<?php echo $get3PopulerVideo->movie_id ."/". $get3PopulerVideo->sef_link ?>">
                                     <img src="<?php echo"https://i.ytimg.com/vi/".$get3PopulerVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1"  style="width: 360px;height: 210px"/>
-                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $get3PopulerVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
+                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $get3PopulerVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $get3PopulerVideo->category_name ?></label></div>
                                     <div class="play"><i class="fa fa-play"></i></div>
                                     <div class="sliderbaslik"><h5><?php echo $get3PopulerVideo->movie_description ?></h5></div>
                                 </a>
@@ -158,60 +140,27 @@
 		<div class="icerik_orta">
 			<div class="container">
 				<ul class="orta_menu">
-					<li><a class="aktif" href="#">Aile</a></li>
-					<li><a href="#">Aksiyon</a></li>
-					<li><a href="#">Bilim Kurgu</a></li>
-					<li><a href="#">Dram</a></li>
-					<li><a href="#">Gerilim</a></li>
-					<li><a href="#">Komedi</a></li>
-					<li><a href="#">Korku</a></li>
-					<li><a href="#">Macera</a></li>
-					<li><a href="#">Yerli</a></li>
+					<li><a class="aktif" href="#">Önerilen Videolar</a></li>
+					<li><a href="#"> </a></li>
 				</ul>
 				
 				<div class="orta_icerik_slider">
 					<div class="orta_slider">
 						<ul>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h4>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h4></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
+                            <?php
+                            while($recommendVideo = $recommendVideos->fetchObject()){
+                                ?>
+                                <li>
+                                    <a href="Video/<?php echo $recommendVideo->movie_id ."/". $recommendVideo->sef_link ?>">
+                                        <img src="<?php echo"https://i.ytimg.com/vi/".$recommendVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1"  style="width: 360px;height: 210px"/>
+                                        <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $recommendVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $recommendVideo->category_name ?></label></div>
+                                        <div class="play"><i class="fa fa-play"></i></div>
+                                        <div class="sliderbaslik"><h5><?php echo $recommendVideo->movie_description ?></h5></div>
+                                    </a>
+                                </li>
+                            <?php
+                            }
+                            ?>
 						</ul>
 						<div class="orta_buton">
 							<div class="left_orta_buton"><i class="fa fa-angle-left"></i></div>
@@ -231,38 +180,21 @@
 				<div class="alt_icerik_slider">
 					<div class="alt_slider">
 						<ul>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL; ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
+                            <?php
+                            while($komediVideo = $komedi->fetchObject()){
+                                ?>
+                                <li>
+                                    <a href="Video/<?php echo $komediVideo->movie_id ."/". $komediVideo->sef_link ?>">
+                                        <img src="<?php echo"https://i.ytimg.com/vi/".$komediVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1"  style="width: 360px;height: 210px"/>
+                                        <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $komediVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $komediVideo->category_name ?></label></div>
+                                        <div class="play"><i class="fa fa-play"></i></div>
+                                        <div class="sliderbaslik"><h5><?php echo $komediVideo->movie_description ?></h5></div>
+                                    </a>
+                                </li>
+
+                            <?php
+                            }
+                            ?>
 						</ul>
 						<div class="alt_buton">
 							<div class="left_alt_buton"><i class="fa fa-angle-left"></i></div>
@@ -281,7 +213,7 @@
                             while($comment = $latestComments->fetchObject()){
 
                                 ?>
-                        <li><a href="Video/<?php echo $comment->movie_id ."/". $comment->sef_url ?>">
+                        <li><a href="Video/<?php echo $comment->movie_id ."/". $comment->sef_link ?>">
                                 <img src="<?php echo URL; ?>/assets/img/avatar.jpg" alt="avatar" />
                                 <h1><?php echo $comment->user_name ?></h1>
                                 <p><?php echo $comment->comment ?></p>

@@ -11,15 +11,20 @@ class Movie
         }
     }
     public function get6PopulerVideos(){
-        $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_view DESC LIMIT 6");
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id ORDER BY MO.movie_view DESC LIMIT 6");
         return $show;
     }
+    public function recommendVideos(){
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id ORDER BY RAND() LIMIT 12");
+        return $show;
+
+    }
     public function get3PopulerVideos(){
-        $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_view DESC LIMIT 3");
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id ORDER BY MO.movie_view DESC LIMIT 3");
         return $show;
     }
     public function get4LastestVideos(){
-        $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_date DESC LIMIT 4");
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id ORDER BY MO.movie_date DESC LIMIT 4");
         return $show;
     }
     public function getVideo($videoID){
@@ -27,11 +32,12 @@ class Movie
         return $show;
     }
 
+    public function getSingleCatVideos($katID,$Limit){
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY MO.movie_date DESC LIMIT $Limit");
+        return $show;
+    }
+
     public function increasView($movieID){
-        try {
-            $update = $this->db->query("UPDATE as_movie SET movie_view = movie_view + 1 WHERE movie_id = $movieID");
-        } catch (PDOException $e) {
-            exit('Cannot updated.');
-        }
+        $update = $this->db->query("UPDATE as_movie SET movie_view = movie_view + 1 WHERE movie_id = $movieID");
     }
 }
