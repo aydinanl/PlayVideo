@@ -13,11 +13,6 @@
 			<div class="container">
 				<div class="videobaslik">
 					<h1><?php echo $video_name ?> </h1>
-					<ul class="part">
-						<li><a href="#">PART 1</a></li>
-						<li><a href="#">PART 2</a></li>
-						<li><a href="#">PART 3</a></li>
-					</ul>				
 				</div>
 				<div class="playvideo">
 					<div class="video">

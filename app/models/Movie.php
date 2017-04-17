@@ -26,4 +26,11 @@ class Movie
         $show =  $this->db->query("SELECT * FROM as_movie WHERE movie_id = $videoID");
         return $show;
     }
+    public function increasView($movieID){
+        try {
+            $update = $this->db->query("UPDATE as_movie SET movie_view = movie_view + 1 WHERE movie_id = $movieID");
+        } catch (PDOException $e) {
+            exit('Cannot updated.');
+        }
+    }
 }

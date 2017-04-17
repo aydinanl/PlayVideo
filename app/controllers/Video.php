@@ -14,6 +14,10 @@ class Video extends Controller
         $categories     = $system->getCategories();
         $videos = $this->model('Movie');
         $videos_information  = $videos->getVideo($videoID);
+
+        //Increas View count when controller loaded.
+        $videos->increasView($videoID);
+
         //Load views
         require VIEW_PATH . "templates/header.php";
         require VIEW_PATH . "video/index.php";
