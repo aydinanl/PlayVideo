@@ -1,11 +1,18 @@
-
+<?php
+    while($video = $videos_information->fetchObject()){
+        $video_name = $video->movie_name;
+        $video_description = $video->movie_description;
+        $movie_url = $video->movie_url;
+        $movie_view = $video->movie_view;
+    }
+?>
 <!-- main -->
 <main>
 	<div id="main">
 		<div id="slider">
 			<div class="container">
 				<div class="videobaslik">
-					<h1><?php echo $videoAdi ?> </h1>
+					<h1><?php echo $video_name ?> </h1>
 					<ul class="part">
 						<li><a href="#">PART 1</a></li>
 						<li><a href="#">PART 2</a></li>
@@ -18,7 +25,7 @@
 						<div class="reklamvideon">
 							<div class="reklamkapat"><i class="fa fa-times"></i></div>
 							<div class="reklamkod">
-								<img src="img/336280.jpg" alt="reklam" />
+								<img src="<?php echo URL ?>/assets/img/336280.jpg" alt="reklam" />
 							</div>
 							<div class="reklamkapat2">(Reklamı Kapat)</div>
 						</div>
@@ -30,20 +37,20 @@
 						<li> <a href="https://twitter.com/share" class="twitter-share-button" data-via="saygilisoftware">Tweet</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </li>
 					</ul>
-					<div class="izlenme">243.000</div>
+					<div class="izlenme"><?php echo $movie_view ?></div>
 					<div class="video_aciklama">
-						<p>Genç bir bilgisayar dehası olan Benjamin, sadece Almanya’da değil dünya çapında tanınan biri olmak istemektedir. Yer altı bir hacker grubu, Benjamin’i aralarına katılmaya çağırınca, Benjamin bu tehlikeli teklifi kabul eder ancak bu tehlikeli oyunlarda başına geleceklerden habersizdir.</p>
+						<p><?php echo $video_description ?></p>
 					</div>
 				</div>
 				<div class="videoyanreklam">
-					<img src="img/336280.jpg" alt="reklam" />
+					<img src="<?php echo URL ?>/assets/img/336280.jpg" alt="reklam" />
 				</div>
 			</div><div class="clear"></div>
 		</div>
 		<!-- slider bitiş -->
 		<div class="slideraltreklam">
 			<div class="container">
-				<img src="img/72890.jpg" alt="sliderresim" />
+				<img src="<?php echo URL ?>/assets/img/72890.jpg" alt="sliderresim" />
 			</div>	
 		</div>
 		<!-- İçerik üst -->
@@ -59,7 +66,7 @@
 						<ul>
 							<li>
 								<a href="#">
-								<img src="img/resim1.jpg" alt="m1" />
+								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 								<div class="play"><i class="fa fa-play"></i></div>
 								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -67,7 +74,7 @@
 							</li>
 							<li>
 								<a href="#">
-								<img src="img/resim1.jpg" alt="m1" />
+								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 								<div class="play"><i class="fa fa-play"></i></div>
 								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -75,7 +82,7 @@
 							</li>
 							<li>
 								<a href="#">
-								<img src="img/resim1.jpg" alt="m1" />
+								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 								<div class="play"><i class="fa fa-play"></i></div>
 								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -83,7 +90,7 @@
 							</li>
 							<li>
 								<a href="#">
-								<img src="img/resim1.jpg" alt="m1" />
+								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 								<div class="play"><i class="fa fa-play"></i></div>
 								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -98,7 +105,7 @@
 				</div>
 				<!-- yazar -->
 					<div class="yazar">
-						<img src="img/avatar.jpg" alt="avatar" />
+						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
 						<h5><a href="#">Play Video</a></h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum efficitur leo, egestas sagittis mi accumsan vitae. Cras volutpat urna quam, nec scelerisque nulla laoreet et. </p>
 					</div>
@@ -108,7 +115,7 @@
 						<ul class="comment-list">
 							<li>
 								<div class="comment-author">
-									<img src="img/avatar.jpg" alt="avatar yorum" />
+									<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
 									<cite class="fn">PlayVideo</cite>
 								</div>
 								<div class="comment-meta">
@@ -120,7 +127,7 @@
 								<ul>
 									<li>
 										<div class="comment-author">
-											<img src="img/avatar.jpg" alt="avatar yorum" />
+											<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
 											<cite class="fn">PlayVideo</cite>
 										</div>
 										<div class="comment-meta">
@@ -132,7 +139,7 @@
 									</li>	
 									<li>
 										<div class="comment-author">
-											<img src="img/avatar.jpg" alt="avatar yorum" />
+											<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
 											<cite class="fn">PlayVideo</cite>
 										</div>
 										<div class="comment-meta">
@@ -145,7 +152,7 @@
 							</li>
 							<li>
 								<div class="comment-author">
-									<img src="img/avatar.jpg" alt="avatar yorum" />
+									<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
 									<cite class="fn">PlayVideo</cite>
 								</div>
 								<div class="comment-meta">
@@ -180,7 +187,7 @@
 					<ul class="sagpopuler">
 						<li>
 							<a href="#">
-							<img src="img/resim1.jpg" alt="m1" />
+							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 							<div class="play"><i class="fa fa-play"></i></div>
 							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -188,7 +195,7 @@
 						</li>
 						<li>
 							<a href="#">
-							<img src="img/resim1.jpg" alt="m1" />
+							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 							<div class="play"><i class="fa fa-play"></i></div>
 							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -196,7 +203,7 @@
 						</li>
 						<li>
 							<a href="#">
-							<img src="img/resim1.jpg" alt="m1" />
+							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
 							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
 							<div class="play"><i class="fa fa-play"></i></div>
 							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
@@ -206,7 +213,7 @@
 					</ul>
 					
 					<div class="sidebarreklam">
-					<img src="img/336280.jpg" alt="sidebar reklam" />
+					<img src="<?php echo URL ?>/assets/img/336280.jpg" alt="sidebar reklam" />
 					</div>
 				</div>
 				<!-- icerik üst sağ bitiş -->
@@ -225,19 +232,19 @@
 					<div class="kolonbaslik"><h4>SON <text>YORUMLAR</text></h4></div>
 					<ul class="son_yorum">
 						<li><a href="#">
-						<img src="img/avatar.jpg" alt="avatar" />
+						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
 						<h1>Erkan</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
 						</a>
 						</li>
 						<li><a href="#">
-						<img src="img/avatar.jpg" alt="avatar" />
+						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
 						<h1>Erkan</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
 						</a>
 						</li>
 						<li><a href="#">
-						<img src="img/avatar.jpg" alt="avatar" />
+						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
 						<h1>Erkan</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
 						</a>
@@ -249,7 +256,7 @@
 		<!-- içerik alt bitiş -->
 		<div class="footer_reklam">
 			<div class="container">
-				<img src="img/72890.jpg" alt="sliderresim" />
+				<img src="<?php echo URL ?>/assets/img/72890.jpg" alt="sliderresim" />
 			</div>
 		</div>
 	</div>

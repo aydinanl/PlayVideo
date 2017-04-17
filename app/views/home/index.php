@@ -11,7 +11,7 @@
                         if($count == 0 or $count == 1 or $count==4 or $count == 5){
                         ?>
                         <li class="rbuyuk">
-                            <a href="Video/<?php echo $popularVideos->movie_id ."/". $itemler->movie_name?>">
+                            <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_url ?>">
                                 <img src="<?php echo"https://i.ytimg.com/vi/".$popularVideos->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
                                 <div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
                                 <div class="play"><i class="fa fa-play"></i></div>
@@ -23,7 +23,7 @@
                             ?>
 
                             <li class="rkucuk">
-                                <a href="#">
+                                <a href="Video/<?php echo $popularVideos->movie_id ."/". $popularVideos->sef_url ?>">
                                     <img src="<?php echo"https://i.ytimg.com/vi/".$popularVideos->movie_url."/hqdefault.jpg?" ?>" alt="m1" />
                                     <div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
                                     <div class="play"><i class="fa fa-play"></i></div>

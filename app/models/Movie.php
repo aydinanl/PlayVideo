@@ -22,4 +22,8 @@ class Movie
         $show =  $this->db->query("SELECT * FROM as_movie ORDER BY movie_date DESC LIMIT 4");
         return $show;
     }
+    public function getVideo($videoID){
+        $show =  $this->db->query("SELECT * FROM as_movie WHERE movie_id = $videoID");
+        return $show;
+    }
 }
