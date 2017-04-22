@@ -1,0 +1,3 @@
+# URL'den public dosyasını gizlemek için gerekli kural.
+RewriteEngine on
+RewriteRule ^(.*) public/$1 [L]

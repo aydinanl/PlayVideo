@@ -29,7 +29,7 @@
                         while($categori = $categories->fetchObject()){
                             //Veritabanına eklenirken kullanılcak = $sef_url = $system->seflink($categori->category_name);
                             ?>
-                            <li><a href="<?php echo URL . '/Kategori/' . $categori->category_id . '/' . $categori->sef_url; ?>"><i class="fa fa-chevron-right"></i> <?php echo $categori->category_name ?></a></li>
+                            <li><a href="<?php echo URL . 'Kategori/' . $categori->category_id . '/' . $categori->sef_url; ?>"><i class="fa fa-chevron-right"></i> <?php echo $categori->category_name ?></a></li>
                         <?php
                         }
                         ?>

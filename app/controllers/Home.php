@@ -2,12 +2,7 @@
 
 class Home extends Controller
 {
-    /**
-     * The default controller method.
-     *
-     * @return void
-     */
-    public function index($name = 'aydin-batuhan')
+    public function index()
     {
         /*
          * Methoda model kullanılması için gerekenler:
@@ -30,7 +25,7 @@ class Home extends Controller
 
 
         /*
-        $sef = "CocoaPods Nedir ? Nasıl Kullanılır ? (SIDE MENU ÖRNEĞİ İLE) SWIFT 3 - XCODE 8";
+        $sef = "Swift 3 - PopUp Nasıl Yapılır ? - XCode 8 (Blur Effect)";
         $sef_convert = $system->seflink($sef);
         echo $sef_convert;
         */

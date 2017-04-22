@@ -1,3 +1,5 @@
+<?php
+?>
 <!-- footer -->
 <footer>
     <div id="footer">

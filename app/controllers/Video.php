@@ -10,13 +10,15 @@ class Video extends Controller
         if(empty($videoID)){
             header('location: '.URL);
         }
+
+        //Model connections
         $system = $this->model('System');
-        $categories     = $system->getCategories();
         $videos = $this->model('Movie');
-        $videos_information  = $videos->getVideo($videoID);
 
         //Increas View count when controller loaded.
         $videos->increasView($videoID);
+        $categories          = $system->getCategories();
+        $videos_information  = $videos->getVideo($videoID);
 
         //Load views
         require VIEW_PATH . "templates/header.php";
