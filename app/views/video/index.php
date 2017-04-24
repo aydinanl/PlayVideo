@@ -208,30 +208,30 @@
 		
 		<div class="icerik_alt">
 			<div class="container">
-				
-				<div class="icerik_alt_sag">
-					<div class="kolonbaslik"><h4>SON <text>YORUMLAR</text></h4></div>
-					<ul class="son_yorum">
-						<li><a href="#">
-						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
-						<h1>Erkan</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
-						</a>
-						</li>
-						<li><a href="#">
-						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
-						<h1>Erkan</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
-						</a>
-						</li>
-						<li><a href="#">
-						<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar" />
-						<h1>Erkan</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ...</p>
-						</a>
-						</li>
-					</ul>
-				</div>
+
+                <div class="icerik_alt_sag">
+                    <div class="kolonbaslik"><h4>SON <text>YORUMLAR</text></h4></div>
+                    <ul class="son_yorum">
+                        <?php
+                        $countComment = 1;
+                        while($comment = $latestComments->fetchObject()){
+
+                            ?>
+                            <li><a href="<?php echo URL ."Video/" . $comment->movie_id ."/". $comment->sef_link ?>">
+                                    <img src="<?php echo URL; ?>/assets/img/avatar.jpg" alt="avatar" />
+                                    <h1><?php echo $comment->user_name ?></h1>
+                                    <p><?php echo $comment->comment ?></p>
+                                </a>
+                            </li>
+                            <?php
+                            if($countComment == 3){
+                                break;
+                            }
+                            $countComment++;
+                        }
+                        ?>
+                    </ul>
+                </div>
 			</div>
 		</div>
 		<!-- içerik alt bitiş -->

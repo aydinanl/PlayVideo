@@ -14,11 +14,14 @@ class Video extends Controller
         //Model connections
         $system = $this->model('System');
         $videos = $this->model('Movie');
+        $comment    = $this->model('Comments');
+
 
         //Increas View count when controller loaded.
         $videos->increasView($videoID);
         $categories          = $system->getCategories();
         $videos_information  = $videos->getVideo($videoID);
+        $latestComments = $comment->getLatestComments();
 
         $catid = $videos->getCatIDbyVideo($videoID);
         $similarVideos = $videos->similarVideos($catid,6);
