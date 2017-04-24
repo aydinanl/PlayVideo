@@ -55,42 +55,28 @@
 				<div class="ustleft">
 				
 					<div class="icerik_alt_sol">
-					<div class="kolonbaslik"><h4>SON <text>VİDEOLAR</text></h4></div>
+					<div class="kolonbaslik"><h4>Benzer <text>VİDEOLAR</text></h4></div>
 					<div class="alt_icerik_slider">
 					<div class="alt_slider">
 						<ul>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
-							<li>
-								<a href="#">
-								<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-								<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-								<div class="play"><i class="fa fa-play"></i></div>
-								<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-								</a>								
-							</li>
+                            <?php
+
+                            while($video = $similarVideos->fetchObject()) {
+
+                            ?>
+                                <li>
+                                    <a href="#">
+                                        <img src="<?php echo"https://i.ytimg.com/vi/".$video->movie_url."/hqdefault.jpg?" ?>" alt="m1"/>
+                                        <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $video->movie_view; ?></label><label><i
+                                                        class="fa fa-comment"></i> 451</label><label><i
+                                                        class="fa fa-bars"></i> <?php echo $video->category_name; ?></label></div>
+                                        <div class="play"><i class="fa fa-play"></i></div>
+                                        <div class="sliderbaslik"><h5><?php echo $video->movie_name ?></h5></div>
+                                    </a>
+                                </li>
+                            <?php
+                            }
+                            ?>
 						</ul>
 						<div class="alt_buton">
 							<div class="left_alt_buton"><i class="fa fa-angle-left"></i></div>
