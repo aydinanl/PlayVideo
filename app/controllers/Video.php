@@ -25,6 +25,7 @@ class Video extends Controller
         $categories          = $system->getCategories();
         $videos_information  = $videos->getVideo($videoID);
         $latestComments = $comment->getLatestComments();
+        $videoComments = $comment->getVideoComments($videoID);
         $get3PopulerVideos  = $movie->get3PopulerVideos();
         $catID = $videos->getCatIDbyVideo($videoID);
         $similarVideos = $videos->similarVideos($catID,6);

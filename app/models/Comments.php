@@ -15,4 +15,9 @@ class Comments
         $get = $this->db->query("SELECT * FROM as_comments AC INNER JOIN as_user AU ON AC.user_id = AU.user_id INNER JOIN as_movie MO ON AC.movie_id = MO.movie_id ORDER BY AC.comment_date DESC");
         return $get;
     }
+
+    public function getVideoComments($movieId){
+        $get = $this->db->query("SELECT * FROM as_comments AC INNER JOIN as_user AU ON AC.user_id = AU.user_id INNER JOIN as_movie MO ON AC.movie_id = MO.movie_id WHERE AC.movie_id = $movieId ORDER BY AC.comment_date DESC");
+        return $get;
+    }
 }
