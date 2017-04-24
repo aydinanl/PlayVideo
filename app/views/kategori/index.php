@@ -44,8 +44,6 @@
                             <?php
                         }
                         ?>
-
-
                     </ul>
 
                     <div class="sidebarreklam">

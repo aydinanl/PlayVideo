@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="Son yorumlar düzenlendi.">
+    <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Kategori.php" afterPath="$PROJECT_DIR$/app/controllers/Kategori.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Movie.php" afterPath="$PROJECT_DIR$/app/models/Movie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Video.php" afterPath="$PROJECT_DIR$/app/controllers/Video.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kategori/index.php" afterPath="$PROJECT_DIR$/app/views/kategori/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/video/index.php" afterPath="$PROJECT_DIR$/app/views/video/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,18 +26,18 @@
       <file leaf-file-name="Kategori.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Kategori.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/kategori/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="85" lean-forward="true" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+            <state relative-caret-position="302">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="46" selection-end-column="25" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
               </folding>
@@ -45,25 +45,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding>
-                <marker date="1493059656000" expanded="true" signature="302:426" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="532:645" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="754:877" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="754:878" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="986:1110" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="1217:1257" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="1217:1258" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="1380:1430" ph="SELECT categ... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="1589:1742" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="1865:2011" ph="SELECT * FRO... as_movie" />
-                <marker date="1493059656000" expanded="true" signature="2123:2188" ph="UPDATE as_mo... " />
-                <marker date="1493059656000" expanded="true" signature="2292:2433" ph="SELECT * FRO... as_movie" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="182" column="25" lean-forward="false" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,11 +110,11 @@
         <option value="$PROJECT_DIR$/app/init.php" />
         <option value="$PROJECT_DIR$/app/models/Comments.php" />
         <option value="$PROJECT_DIR$/app/views/home/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/Video.php" />
-        <option value="$PROJECT_DIR$/app/views/video/index.php" />
         <option value="$PROJECT_DIR$/app/controllers/Kategori.php" />
         <option value="$PROJECT_DIR$/app/models/Movie.php" />
         <option value="$PROJECT_DIR$/app/views/kategori/index.php" />
+        <option value="$PROJECT_DIR$/app/views/video/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/Video.php" />
       </list>
     </option>
   </component>
@@ -474,7 +471,7 @@
       <workItem from="1492513466885" duration="2441000" />
       <workItem from="1492535974843" duration="36000" />
       <workItem from="1492898671562" duration="281000" />
-      <workItem from="1493058109514" duration="1929000" />
+      <workItem from="1493058109514" duration="2222000" />
     </task>
     <task id="LOCAL-00001" summary="Header, kategoriler modeli yazıldı bağlandı.">
       <created>1492359618873</created>
@@ -546,11 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493054750042</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Kategoriler view tamamlandı.">
+      <created>1493060108479</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1493060108479</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59287000" />
+    <option name="totallyTimeSpent" value="59580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -592,7 +596,8 @@
     <MESSAGE value="Ana sayfa tamamlandı." />
     <MESSAGE value="Videoya göre kategori id alındı." />
     <MESSAGE value="Son yorumlar düzenlendi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Son yorumlar düzenlendi." />
+    <MESSAGE value="Kategoriler view tamamlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kategoriler view tamamlandı." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -897,22 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="171" column="55" lean-forward="false" selection-start-line="171" selection-start-column="55" selection-end-line="171" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -925,6 +914,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="182" column="25" lean-forward="false" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -950,21 +947,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kategori/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Kategori.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="300">
+          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kategori/index.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="85" lean-forward="true" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

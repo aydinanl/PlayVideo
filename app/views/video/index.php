@@ -165,33 +165,22 @@
 				<!-- icerik üst sağ -->
 				<div class="ustright">
 					<div class="kolonbaslik"><h4>POPÜLER <text>VİDEOLAR</text></h4></div>
-					<ul class="sagpopuler">
-						<li>
-							<a href="#">
-							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>						
-						</li>
-						<li>
-							<a href="#">
-							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>						
-						</li>
-						<li>
-							<a href="#">
-							<img src="<?php echo URL ?>/assets/img/resim1.jpg" alt="m1" />
-							<div class="videobilgi"><label><i class="fa fa-eye"></i> 23,567</label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> Aksiyon</label></div>
-							<div class="play"><i class="fa fa-play"></i></div>
-							<div class="sliderbaslik"><h5>Mac Demarco Vs. Animal Crossing: Who Performed In A Rowboat Better?</h5></div>
-							</a>						
-						</li>
-					
-					</ul>
+                    <ul class="sagpopuler">
+                        <?php
+                        while($get3PopulerVideo = $get3PopulerVideos->fetchObject()){
+                            ?>
+                            <li>
+                            <li><a href="<?php echo URL ."Video/" . $get3PopulerVideo->movie_id ."/". $get3PopulerVideo->sef_link ?>">
+                                    <img src="<?php echo"https://i.ytimg.com/vi/".$get3PopulerVideo->movie_url."/hqdefault.jpg?" ?>" alt="m1"  style="width: 360px;height: 210px"/>
+                                    <div class="videobilgi"><label><i class="fa fa-eye"></i> <?php echo $get3PopulerVideo->movie_view ?></label><label><i class="fa fa-comment"></i> 451</label><label><i class="fa fa-bars"></i> <?php echo $get3PopulerVideo->category_name ?></label></div>
+                                    <div class="play"><i class="fa fa-play"></i></div>
+                                    <div class="sliderbaslik"><h5><?php echo $get3PopulerVideo->movie_description ?></h5></div>
+                                </a>
+                            </li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
 					
 					<div class="sidebarreklam">
 					<img src="<?php echo URL ?>/assets/img/336280.jpg" alt="sidebar reklam" />

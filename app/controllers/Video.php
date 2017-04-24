@@ -15,17 +15,19 @@ class Video extends Controller
         $system = $this->model('System');
         $videos = $this->model('Movie');
         $comment    = $this->model('Comments');
+        $movie  = $this->model('Movie');
 
 
         //Increas View count when controller loaded.
         $videos->increasView($videoID);
+
+        //Load data from model to views.
         $categories          = $system->getCategories();
         $videos_information  = $videos->getVideo($videoID);
         $latestComments = $comment->getLatestComments();
-
-        $catid = $videos->getCatIDbyVideo($videoID);
-        $similarVideos = $videos->similarVideos($catid,6);
-
+        $get3PopulerVideos  = $movie->get3PopulerVideos();
+        $catID = $videos->getCatIDbyVideo($videoID);
+        $similarVideos = $videos->similarVideos($catID,6);
 
         //Load views
         require VIEW_PATH . "templates/header.php";
