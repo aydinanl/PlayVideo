@@ -32,6 +32,10 @@ class Movie
         return $show;
     }
 
+    public function getCatIDbyVideo($videoID){
+        $show =  $this->db->query("SELECT category_id FROM as_movie WHERE movie_id = $videoID");
+        return $show->fetchObject()->category_id;
+    }
 
     public function getSingleCatVideos($katID,$Limit){
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY MO.movie_date DESC LIMIT $Limit");
