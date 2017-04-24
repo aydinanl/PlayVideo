@@ -1,8 +1,10 @@
 <?php
     while($video = $videos_information->fetchObject()){
+        $video_id = $video->movie_id;
         $video_name = $video->movie_name;
         $video_description = $video->movie_description;
         $movie_url = $video->movie_url;
+        $movie_sef = $video->sef_link;
         $movie_view = $video->movie_view;
     }
 ?>
@@ -149,12 +151,12 @@
 				<!-- yorum yaz -->
 					<div class="kolonbaslik"><h4>BİR YORUM <text>YAZ</text></h4></div>		
 					<div id="yorumyaz">
-						<form action="#" method="post" >
+						<form action="<?php echo URL; ?>Video/VideoEkle/<?php echo $video_id . '/' . $movie_sef ?>" method="post" >
 							<input type="text" name="adsoyad" placeholder="isim" />
 							<input type="text" name="eposta" placeholder="e-posta" />
 							<input type="text" name="web" placeholder="web siteniz" />
 							<textarea name="mesaj" placeholder="yorumunuz"></textarea>
-							<button type="submit">GÖNDER</button>
+							<button type="submit" name="submit_comment">GÖNDER</button>
 						</form>
 					</div>
 				</div>
@@ -191,9 +193,6 @@
 			</div>
 		</div>
 		<!-- içerik üst bitiş -->
-		
-
-			
 		
 		<div class="icerik_alt">
 			<div class="container">

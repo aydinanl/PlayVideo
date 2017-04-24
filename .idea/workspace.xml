@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/header.php" afterPath="$PROJECT_DIR$/app/views/templates/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Page.php" afterPath="$PROJECT_DIR$/app/controllers/Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Video.php" afterPath="$PROJECT_DIR$/app/controllers/Video.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/video/index.php" afterPath="$PROJECT_DIR$/app/views/video/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,41 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/page/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+            <state relative-caret-position="554">
+              <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -87,9 +58,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="229" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="366">
+              <caret line="153" column="111" lean-forward="false" selection-start-line="153" selection-start-column="111" selection-end-line="153" selection-end-column="111" />
+              <folding>
+                <marker date="1493062938000" expanded="true" signature="7214:7243" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,12 +114,12 @@
         <option value="$PROJECT_DIR$/app/controllers/Kategori.php" />
         <option value="$PROJECT_DIR$/app/models/Movie.php" />
         <option value="$PROJECT_DIR$/app/views/kategori/index.php" />
-        <option value="$PROJECT_DIR$/app/views/video/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/Video.php" />
         <option value="$PROJECT_DIR$/app/views/page/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Page.php" />
         <option value="$PROJECT_DIR$/app/views/page/index.php" />
         <option value="$PROJECT_DIR$/app/views/templates/header.php" />
+        <option value="$PROJECT_DIR$/app/controllers/Page.php" />
+        <option value="$PROJECT_DIR$/app/views/video/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/Video.php" />
       </list>
     </option>
   </component>
@@ -525,7 +498,7 @@
       <workItem from="1492513466885" duration="2441000" />
       <workItem from="1492535974843" duration="36000" />
       <workItem from="1492898671562" duration="281000" />
-      <workItem from="1493058109514" duration="3090000" />
+      <workItem from="1493058109514" duration="4545000" />
     </task>
     <task id="LOCAL-00001" summary="Header, kategoriler modeli yazıldı bağlandı.">
       <created>1492359618873</created>
@@ -611,11 +584,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493060471828</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Page Controller eklendi, hakkımızda statik bağlandı.">
+      <created>1493061404718</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1493061404718</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60448000" />
+    <option name="totallyTimeSpent" value="61903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -659,7 +639,8 @@
     <MESSAGE value="Son yorumlar düzenlendi." />
     <MESSAGE value="Kategoriler view tamamlandı." />
     <MESSAGE value="Video view ilerletildi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Video view ilerletildi." />
+    <MESSAGE value="Page Controller eklendi, hakkımızda statik bağlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Page Controller eklendi, hakkımızda statik bağlandı." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -686,7 +667,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
+          <folding>
+            <marker date="1493062938000" expanded="true" signature="7214:7243" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,30 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="229" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/page/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1031,6 +990,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="153" column="111" lean-forward="false" selection-start-line="153" selection-start-column="111" selection-end-line="153" selection-end-column="111" />
+          <folding>
+            <marker date="1493062938000" expanded="true" signature="7214:7243" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           <folding />
         </state>
       </provider>

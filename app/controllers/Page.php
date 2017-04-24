@@ -2,11 +2,11 @@
 class Page extends Controller
 {
 
-    public function index($videoID="",$videoAdi="")
+    public function index($pageID="",$pageName="")
     {
         /*
         //Sayfa ID'si yoksa ana sayfaya yönlendir.
-        if(empty($sayfaID)){
+        if(empty($$pageID)){
             header('location: '.URL);
         }
         */
@@ -25,5 +25,4 @@ class Page extends Controller
         require VIEW_PATH . "page/index.php";
         require VIEW_PATH . "templates/footer.php";
     }
-
 }

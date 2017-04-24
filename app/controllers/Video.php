@@ -34,5 +34,17 @@ class Video extends Controller
         require VIEW_PATH . "video/index.php";
         require VIEW_PATH . "templates/footer.php";
     }
-
+    public function VideoEkle($videoID,$videoAdi=""){
+        // if we have POST data to create a new song entry
+        if (isset($_POST["submit_comment"])) {
+            echo $_POST["adsoyad"] . "<br>";
+            echo $_POST["eposta"] . "<br>";
+            echo $_POST["web"] . "<br>";
+            echo $_POST["mesaj"] . "<br>";
+            echo "Video ID'side: " . $videoID . "<br>";
+            echo "Video Adı ise: " . $videoAdi . "<br>";
+        }
+        // where to go after song has been added
+        //header('location: ' . URL . 'Video/'.$videoID.'/'.$videoAdi);
+    }
 }
