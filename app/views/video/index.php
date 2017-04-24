@@ -4,6 +4,7 @@
         $video_description = $video->movie_description;
         $movie_url = $video->movie_url;
         $movie_view = $video->movie_view;
+        $category = $video->category_id;
     }
 ?>
 <!-- main -->

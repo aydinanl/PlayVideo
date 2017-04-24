@@ -32,6 +32,7 @@ class Movie
         return $show;
     }
 
+
     public function getSingleCatVideos($katID,$Limit){
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY MO.movie_date DESC LIMIT $Limit");
         return $show;
@@ -45,4 +46,6 @@ class Movie
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY RAND() LIMIT $Limit");
         return $show;
     }
+
+
 }

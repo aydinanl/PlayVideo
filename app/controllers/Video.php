@@ -19,7 +19,9 @@ class Video extends Controller
         $videos->increasView($videoID);
         $categories          = $system->getCategories();
         $videos_information  = $videos->getVideo($videoID);
-        $similarvideos = $videos->similarVideos($categories,6);
+        $catid =  $videos_information->fetchObject()->category_id;
+
+        $similarvideos = $videos->similarVideos($catid,6);
 
         //Load views
         require VIEW_PATH . "templates/header.php";

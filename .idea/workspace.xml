@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Categories.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Video.php" afterPath="$PROJECT_DIR$/app/controllers/Video.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Movie.php" afterPath="$PROJECT_DIR$/app/models/Movie.php" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="Comments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <marker date="1493041748000" expanded="true" signature="304:463" ph="SELECT * FRO... as_comments" />
               </folding>
@@ -65,51 +66,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/init.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Movie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="630">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
-                <marker date="1493041851000" expanded="true" signature="302:426" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="532:645" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="754:878" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="986:1110" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="1217:1257" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="1388:1541" ph="SELECT * FRO... as_movie" />
-                <marker date="1493041851000" expanded="true" signature="1659:1724" ph="UPDATE as_mo... " />
-                <marker date="1493041851000" expanded="true" signature="1828:1969" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="302:426" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="532:645" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="754:878" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="986:1110" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="1217:1257" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="1389:1542" ph="SELECT * FRO... as_movie" />
+                <marker date="1493051672000" expanded="true" signature="1660:1725" ph="UPDATE as_mo... " />
+                <marker date="1493051672000" expanded="true" signature="1829:1970" ph="SELECT * FRO... as_movie" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <marker date="1493051596000" expanded="true" signature="305:338" ph="SELECT * FRO... as_categories" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,11 +117,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="73" column="87" lean-forward="false" selection-start-line="73" selection-start-column="87" selection-end-line="73" selection-end-column="87" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kategori.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Kategori.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -178,9 +181,10 @@
         <option value="$PROJECT_DIR$/app/views/templates/header.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/init.php" />
+        <option value="$PROJECT_DIR$/app/views/video/index.php" />
+        <option value="$PROJECT_DIR$/app/models/Categories.php" />
         <option value="$PROJECT_DIR$/app/models/Movie.php" />
         <option value="$PROJECT_DIR$/app/controllers/Video.php" />
-        <option value="$PROJECT_DIR$/app/views/video/index.php" />
       </list>
     </option>
   </component>
@@ -489,7 +493,7 @@
       <workItem from="1492513466885" duration="2441000" />
       <workItem from="1492535974843" duration="36000" />
       <workItem from="1492898671562" duration="281000" />
-      <workItem from="1493041754529" duration="528000" />
+      <workItem from="1493041754529" duration="2362000" />
     </task>
     <task id="LOCAL-00001" summary="Header, kategoriler modeli yazıldı bağlandı.">
       <created>1492359618873</created>
@@ -547,14 +551,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492459632421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Benzer videolar çekildi. &#10;&#10;//Hatalı kategori id göndermek lazım.">
+      <created>1493042312556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1493042312556</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55354000" />
+    <option name="totallyTimeSpent" value="57188000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="984" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903089" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -591,21 +602,16 @@
     <MESSAGE value="Video görüntülenme sayısı için model yazıldı ve bağlandı." />
     <MESSAGE value="Videolar bağlanıyor." />
     <MESSAGE value="Ana sayfa tamamlandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ana sayfa tamamlandı." />
+    <MESSAGE value="Benzer videolar çekildi. &#10;&#10;//Hatalı kategori id göndermek lazım." />
+    <option name="LAST_COMMIT_MESSAGE" value="Benzer videolar çekildi. &#10;&#10;//Hatalı kategori id göndermek lazım." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/core/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -809,14 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Kategori.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -892,45 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <marker date="1493041748000" expanded="true" signature="304:463" ph="SELECT * FRO... as_comments" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/System.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <marker date="1493041851000" expanded="true" signature="302:426" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="532:645" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="754:878" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="986:1110" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="1217:1257" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="1388:1541" ph="SELECT * FRO... as_movie" />
-            <marker date="1493041851000" expanded="true" signature="1659:1724" ph="UPDATE as_mo... " />
-            <marker date="1493041851000" expanded="true" signature="1828:1969" ph="SELECT * FRO... as_movie" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -953,8 +916,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/video/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="73" column="87" lean-forward="false" selection-start-line="73" selection-start-column="87" selection-end-line="73" selection-end-column="87" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Kategori.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <marker date="1493041748000" expanded="true" signature="304:463" ph="SELECT * FRO... as_comments" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1493051596000" expanded="true" signature="305:338" ph="SELECT * FRO... as_categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <marker date="1493051672000" expanded="true" signature="302:426" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="532:645" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="754:878" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="986:1110" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="1217:1257" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="1389:1542" ph="SELECT * FRO... as_movie" />
+            <marker date="1493051672000" expanded="true" signature="1660:1725" ph="UPDATE as_mo... " />
+            <marker date="1493051672000" expanded="true" signature="1829:1970" ph="SELECT * FRO... as_movie" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding />
         </state>
       </provider>
