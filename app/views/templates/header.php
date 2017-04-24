@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li><a href="#">çok izlenenler</a></li>
-                <li><a href="#">hakkımızda</a></li>
+                <li><a href="<?php echo URL ?>Page/Hakkimizda">hakkımızda</a></li>
                 <li><a href="#">iletişim</a></li>
                 <li><a href="#"><i class="fa fa-random"></i> rastgele video</a></li>
             </ul>

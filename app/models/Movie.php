@@ -42,6 +42,11 @@ class Movie
         return $show;
     }
 
+    public function getCategoriesVideos($katID){
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY MO.movie_date DESC");
+        return $show;
+    }
+
     public function increasView($movieID){
         $update = $this->db->query("UPDATE as_movie SET movie_view = movie_view + 1 WHERE movie_id = $movieID");
     }
