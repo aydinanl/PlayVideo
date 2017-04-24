@@ -96,55 +96,29 @@
 					<div class="kolonbaslik"><h4><text>YORUMLAR</text></h4></div>
 					<div class="comment-area">
 						<ul class="comment-list">
-							<li>
-								<div class="comment-author">
-									<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
-									<cite class="fn">PlayVideo</cite>
-								</div>
-								<div class="comment-meta">
-									<a href="#">5 Ekim 2015 , 23:59</a>
-									<a href="#">(Düzenle)</a>
-								</div>
-								<p>Burası çok değerlenecek hacıııııııı</p>
-								<div class="reply"><a href="#">Cevapla</a></div>
-								<ul>
-									<li>
-										<div class="comment-author">
-											<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
-											<cite class="fn">PlayVideo</cite>
-										</div>
-										<div class="comment-meta">
-											<a href="#">5 Ekim 2015 , 23:59</a>
-											<a href="#">(Düzenle)</a>
-										</div>
-										<p>Burası çok değerlenecek hacıııııııı</p>
-										
-									</li>	
-									<li>
-										<div class="comment-author">
-											<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
-											<cite class="fn">PlayVideo</cite>
-										</div>
-										<div class="comment-meta">
-											<a href="#">5 Ekim 2015 , 23:59</a>
-											<a href="#">(Düzenle)</a>
-										</div>
-										<p>Burası çok değerlenecek hacıııııııı</p>
-									</li>								
-								</ul>
-							</li>
-							<li>
-								<div class="comment-author">
-									<img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
-									<cite class="fn">PlayVideo</cite>
-								</div>
-								<div class="comment-meta">
-									<a href="#">5 Ekim 2015 , 23:59</a>
-									<a href="#">(Düzenle)</a>
-								</div>
-								<p>Burası çok değerlenecek hacıııııııı</p>
-								<div class="reply"><a href="#">Cevapla</a></div>
-							</li>
+                            <?php
+                            $countComment = 1;
+                            while($comment = $videoComments->fetchObject()){
+
+                                ?>
+
+                                <li>
+                                    <div class="comment-author">
+                                        <img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
+                                        <cite class="fn"><?php echo $comment->user_name ?></cite>
+                                    </div>
+                                    <div class="comment-meta">
+                                        <a href="#">5 Ekim 2015 , 23:59</a>
+                                    </div>
+                                    <p><?php echo $comment->comment ?></p>
+                                </li>
+                                <?php
+                                if($countComment == 3){
+                                    break;
+                                }
+                                $countComment++;
+                            }
+                            ?>
 						
 						</ul>
 					</div>
