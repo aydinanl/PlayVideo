@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fde55cc-3b5a-4cac-a295-68e2a1e93376" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Video.php" afterPath="$PROJECT_DIR$/app/controllers/Video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Comments.php" afterPath="$PROJECT_DIR$/app/models/Comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/video/index.php" afterPath="$PROJECT_DIR$/app/views/video/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -354,7 +351,7 @@
       <workItem from="1492513466885" duration="2441000" />
       <workItem from="1492535974843" duration="36000" />
       <workItem from="1492898671562" duration="281000" />
-      <workItem from="1493063516315" duration="50000" />
+      <workItem from="1493063516315" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="Header, kategoriler modeli yazıldı bağlandı.">
       <created>1492359618873</created>
@@ -412,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492459632421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ana sayfa tamamlandı.">
+      <created>1493063571423</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1493063571423</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54876000" />
+    <option name="totallyTimeSpent" value="54886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="984" extended-state="0" />
