@@ -12,10 +12,10 @@ class Video extends Controller
         }
 
         //Model connections
-        $system = $this->model('System');
-        $videos = $this->model('Movie');
+        $system     = $this->model('System');
+        $videos     = $this->model('Movie');
         $comment    = $this->model('Comments');
-        $movie  = $this->model('Movie');
+        $movie      = $this->model('Movie');
 
 
         //Increas View count when controller loaded.
@@ -35,17 +35,18 @@ class Video extends Controller
         require VIEW_PATH . "video/index.php";
         require VIEW_PATH . "templates/footer.php";
     }
-    public function VideoEkle($videoID,$videoAdi=""){
+    public function YorumEkle($videoID,$videoAdi=""){
         // if we have POST data to create a new song entry
         if (isset($_POST["submit_comment"])) {
-            echo $_POST["adsoyad"] . "<br>";
-            echo $_POST["eposta"] . "<br>";
-            echo $_POST["web"] . "<br>";
-            echo $_POST["mesaj"] . "<br>";
-            echo "Video ID'side: " . $videoID . "<br>";
-            echo "Video Adı ise: " . $videoAdi . "<br>";
+            $comment    = $this->model('Comments');
+            $name = $_POST["adsoyad"];
+            $mail = $_POST["eposta"];
+            $website = $_POST["web"];
+            $comments = $_POST["mesaj"];
+
+            $comment->addComment($videoID,$name,$mail,$website,$comments);
         }
         // where to go after song has been added
-        //header('location: ' . URL . 'Video/'.$videoID.'/'.$videoAdi);
+        header('location: ' . URL . 'Video/'.$videoID.'/'.$videoAdi);
     }
 }

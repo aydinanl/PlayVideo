@@ -214,7 +214,7 @@
                                 ?>
                         <li><a href="Video/<?php echo $comment->movie_id ."/". $comment->sef_link ?>">
                                 <img src="<?php echo URL; ?>/assets/img/avatar.jpg" alt="avatar" />
-                                <h1><?php echo $comment->user_name ?></h1>
+                                <h1><?php echo $comment->name_surname ?></h1>
                                 <p><?php echo $comment->comment ?></p>
                             </a>
                         </li>

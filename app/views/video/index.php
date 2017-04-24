@@ -97,26 +97,34 @@
 					<div class="comment-area">
 						<ul class="comment-list">
                             <?php
-                            $countComment = 1;
+                            $countComment = 0;
                             while($comment = $videoComments->fetchObject()){
-
                                 ?>
-
                                 <li>
                                     <div class="comment-author">
                                         <img src="<?php echo URL ?>/assets/img/avatar.jpg" alt="avatar yorum" />
-                                        <cite class="fn"><?php echo $comment->user_name ?></cite>
+                                        <cite class="fn"><?php echo $comment->name_surname ?></cite>
                                     </div>
                                     <div class="comment-meta">
-                                        <a href="#">5 Ekim 2015 , 23:59</a>
+                                        <a href="#"><?php echo $comment->comment_date?></a>
                                     </div>
                                     <p><?php echo $comment->comment ?></p>
                                 </li>
                                 <?php
-                                if($countComment == 3){
-                                    break;
-                                }
                                 $countComment++;
+                            }
+                            if($countComment == 0){
+                                ?>
+                                <li>
+                                    <div class="comment-author">
+
+                                    </div>
+                                    <div class="comment-meta">
+
+                                    </div>
+                                    <p><?php echo "Henüz yorum atılmadı, İlk yorumu atmak ister misiniz?"; ?></p>
+                                </li>
+                            <?php
                             }
                             ?>
 						
@@ -125,7 +133,7 @@
 				<!-- yorum yaz -->
 					<div class="kolonbaslik"><h4>BİR YORUM <text>YAZ</text></h4></div>		
 					<div id="yorumyaz">
-						<form action="<?php echo URL; ?>Video/VideoEkle/<?php echo $video_id . '/' . $movie_sef ?>" method="post" >
+						<form action="<?php echo URL; ?>Video/YorumEkle/<?php echo $video_id . '/' . $movie_sef ?>" method="post" >
 							<input type="text" name="adsoyad" placeholder="isim" />
 							<input type="text" name="eposta" placeholder="e-posta" />
 							<input type="text" name="web" placeholder="web siteniz" />
@@ -181,7 +189,7 @@
                             ?>
                             <li><a href="<?php echo URL ."Video/" . $comment->movie_id ."/". $comment->sef_link ?>">
                                     <img src="<?php echo URL; ?>/assets/img/avatar.jpg" alt="avatar" />
-                                    <h1><?php echo $comment->user_name ?></h1>
+                                    <h1><?php echo $comment->name_surname ?></h1>
                                     <p><?php echo $comment->comment ?></p>
                                 </a>
                             </li>
