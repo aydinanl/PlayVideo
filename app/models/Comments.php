@@ -29,8 +29,5 @@ class Comments
             ":movie_id" => $videoID,
             ":comment" => $comments
         ));
-        if($kayit){
-            return true;
-        }
     }
 }
