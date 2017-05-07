@@ -3,7 +3,6 @@
 
 class Video extends Controller
 {
-
     public function index($videoID="",$videoAdi="")
     {
         //Video ID'si yoksa ana sayfaya yönlendir.

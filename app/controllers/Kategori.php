@@ -28,7 +28,5 @@ class Kategori extends Controller
         require VIEW_PATH . "templates/header.php";
         require VIEW_PATH . "kategori/index.php";
         require VIEW_PATH . "templates/footer.php";
-
-
     }
 }

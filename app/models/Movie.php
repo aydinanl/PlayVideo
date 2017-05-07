@@ -55,6 +55,4 @@ class Movie
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY RAND() LIMIT $Limit");
         return $show;
     }
-
-
 }
