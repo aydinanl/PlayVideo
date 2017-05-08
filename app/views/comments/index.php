@@ -23,33 +23,27 @@
                             <tr>
                                 <th>Name Surname</th>
                                 <th>Comment</th>
-                                <th>Main</th>
+                                <th>Web Site</th>
+                                <th>Email</th>
                                 <th>Video Name</th>
-                                <th>Actions</th>
+                                <th width="7%">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
+                            <?php
+                            while($comment = $getComments->fetchObject() ){
+                                ?>
+                                <tr class="gradeX">
+                                    <td><?=$comment->name_surname?></td>
+                                    <td><?=$comment->comment?></td>
+                                    <td><?=$comment->website?></td>
+                                    <td class="center"><?=$comment->email?></td>
+                                    <td class="center"><?=$comment->movie_name?></td>
+                                    <td class="center"><a href="<?= URL . 'yonetim/deleteComment/' . $comment->comment_id?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>

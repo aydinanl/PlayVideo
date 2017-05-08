@@ -29,20 +29,23 @@
                                             aria-hidden="true">&times;</span></button>
                                     <h4 class="modal-title" id="myModalLabel">Add Category</h4>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="input-lg form-control" type="text" placeholder="Category Title">
+                                <form action="<?= URL . 'yonetim/addCategory' ?>" method="post">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="input-lg form-control" type="text" placeholder="Category Title" name="cat_name" required>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add</button>
-                                </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary" name="add_category">Add</button>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -59,34 +62,22 @@
                             <thead>
                             <tr>
                                 <th>Title</th>
-                                <th>Description</th>
                                 <th>Url</th>
-                                <th>Category</th>
-                                <th>Actions</th>
+                                <th style="width: 10%">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
+                            <?php
+                            foreach ($getCategories as $category){
+                                ?>
+                                <tr class="gradeX">
+                                    <td><?= $category->category_name ?></td>
+                                    <td class="center"><a href="<?= URL . 'Kategori/' . $category->category_id . '/' . $category->sef_url ?>" target="_blank"><?= $category->sef_url?></a></td>
+                                    <td class="center"><a href="<?= URL . 'yonetim/deleteCategory/' . $category->category_id?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>

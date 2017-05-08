@@ -18,11 +18,13 @@
                                 <hr class="right">
                             </div>
                         </div>
-                        <input class="form-control" type="text" placeholder="E-mail address">
-                        <input class="form-control" type="password" placeholder="Password">
-                        <div class="action">
-                            <a class="btn btn-primary signup" href="index.html">Login</a>
-                        </div>
+                        <form action="<?= URL . 'login' . '/makelogin' ?>" method="post">
+                            <input class="form-control" type="text" placeholder="E-mail address" name="mail">
+                            <input class="form-control" type="password" placeholder="Password" name="password">
+                            <div class="action">
+                                <button name="make_login" class="btn btn-primary signup">Login</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 

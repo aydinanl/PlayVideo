@@ -29,62 +29,47 @@
                                             aria-hidden="true">&times;</span></button>
                                     <h4 class="modal-title" id="myModalLabel">Add Video</h4>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-lg-12">
+                                <form action="<?= URL . 'yonetim/addVideo' ?>" method="post">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="input-lg form-control" type="text" placeholder="Video Title" name="video_title" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input class="input form-control" type="text" placeholder="Video Url" name="video_url" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <select name="selected_category" class="selectpicker form-control">
+                                                        <?php
+                                                        foreach ($getCategories as $category){
+                                                            ?>
+                                                            <option value="<?=$category->category_id?>"><?=$category->category_name?></option>
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+
                                             <div class="form-group">
-                                                <input class="input-lg form-control" type="text" placeholder="Video Title">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-lg-6">
-                                                <input class="input form-control" type="text" placeholder="Video Url">
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <select class="selectpicker form-control" style="display: none;">
-                                                    <option>Mustard</option>
-                                                    <option>Ketchup</option>
-                                                    <option>Relish</option>
-                                                </select>
-                                                <div class="btn-group bootstrap-select dropup ">
-                                                    <button type="button"
-                                                            class="btn dropdown-toggle selectpicker btn-default"
-                                                            data-toggle="dropdown" title="Mustard"><span
-                                                            class="filter-option pull-left">Mustard</span>&nbsp;<span
-                                                            class="caret"></span></button>
-                                                    <div class="dropdown-menu open"
-                                                         style="max-height: 5343px; overflow: hidden; min-height: 0px;">
-                                                        <ul class="dropdown-menu inner selectpicker" role="menu"
-                                                            style="max-height: 5331px; overflow-y: auto;">
-                                                            <li rel="0" class="selected"><a tabindex="0" class=""
-                                                                                            style=""><span class="text">Mustard</span><i
-                                                                        class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
-                                                            </li>
-                                                            <li rel="1"><a tabindex="0" class="" style=""><span
-                                                                        class="text">Ketchup</span><i
-                                                                        class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
-                                                            </li>
-                                                            <li rel="2"><a tabindex="0" class="" style=""><span
-                                                                        class="text">Relish</span><i
-                                                                        class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <textarea class="form-control" placeholder="Descriotion" rows="3" name="video_description" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-lg-12">
-                                                <textarea class="form-control" placeholder="Descriotion" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add</button>
-                                </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary" name="add_video">Add</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -104,31 +89,27 @@
                                 <th>Description</th>
                                 <th>Url</th>
                                 <th>Category</th>
-                                <th>Actions</th>
+                                <th style="width: 10%">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
-                            <tr class="gradeX">
-                                <td>Misc</td>
-                                <td>Lynx</td>
-                                <td>Text only</td>
-                                <td class="center">-</td>
-                                <td class="center"><button class="btn btn-danger btn-xs">Delete</button></td>
-                            </tr>
+                            <?php
+                            foreach ($getVideos as $video){
+                                ?>
+                                <tr class="gradeX">
+                                    <td><?=substr($video->movie_name,0,50)?></td>
+                                    <td><?=substr($video->movie_description,0,150)?></td>
+                                    <td><a href="<?= URL . 'Video/' . $video->movie_id . '/' . $video->sef_link?>" target="_blank"><?=substr($video->movie_url,0,150)?></a></td>
+                                    <td class="center"><?= $video->category_name?></td>
+                                    <td class="center">
+                                        <button class="btn btn-info btn-xs">Edit</button>
+                                        <a href="<?= URL . 'yonetim/deleteVideo/' . $video->movie_id?>" class="btn btn-danger btn-xs">Delete</a>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+
                             </tbody>
                         </table>
                     </div>

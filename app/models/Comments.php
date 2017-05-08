@@ -30,4 +30,11 @@ class Comments
             ":comment" => $comments
         ));
     }
+
+    public function deleteComment($commentID){
+        $delete_category = $this->db->prepare("DELETE FROM as_comments WHERE comment_id = :id");
+        $delete_category->execute(array(
+            ':id' => $commentID,
+        ));
+    }
 }

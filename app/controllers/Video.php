@@ -35,7 +35,7 @@ class Video extends Controller
         require VIEW_PATH . "templates/footer.php";
     }
     public function YorumEkle($videoID,$videoAdi=""){
-        // if we have POST data to create a new song entry
+        // if we have POST data to create a new comment entry
         if (isset($_POST["submit_comment"])) {
             $comment    = $this->model('Comments');
             $name = $_POST["adsoyad"];
@@ -45,7 +45,7 @@ class Video extends Controller
 
             $comment->addComment($videoID,$name,$mail,$website,$comments);
         }
-        // where to go after song has been added
+        // where to go after comment has been added
         header('location: ' . URL . 'Video/'.$videoID.'/'.$videoAdi);
     }
 }

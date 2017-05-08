@@ -1,10 +1,12 @@
+<?php
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Bootstrap Admin Theme v3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="<?php echo URL; ?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=URL?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=URL?>/assets/vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen">
     <!-- styles -->
     <link href="<?php echo URL; ?>/assets/css/styles.css" rel="stylesheet">
@@ -22,7 +24,7 @@
     <div class="col-md-5">
         <!-- Logo -->
         <div class="logo">
-            <h1><a href="index.html">Video Management System</a></h1>
+            <h1><a href="<?= URL ?>">Video Management System</a></h1>
         </div>
     </div>
     <div class="col-md-2 pull-right">
@@ -33,8 +35,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b
                                 class="caret"></b></a>
                         <ul class="dropdown-menu animated fadeInUp">
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="login.html">Logout</a></li>
+                            <li><a href="<?= URL . 'yonetim/logout'?>">Logout</a></li>
                         </ul>
                     </li>
                 </ul>

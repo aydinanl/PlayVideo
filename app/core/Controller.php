@@ -1,8 +1,10 @@
 <?php
-
+    session_start();
+    ob_start();
 class Controller
 {
     public $db = null;
+
     function __construct()
     {
         $this->openDatabaseConnection();

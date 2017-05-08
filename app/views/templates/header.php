@@ -50,8 +50,8 @@
                 <a class="arama arama2" href="#"><i class="fa fa-search"></i></a>
             </div>
             <div class="search">
-                <form action="#" method="post">
-                    <input type="text" name="s" placeholder="Video Arayın"/>
+                <form action="<?= URL . 'search'?>" method="post">
+                    <input type="text" name="ara" placeholder="Video Arayın"/>
                 </form>
             </div>
         </div>

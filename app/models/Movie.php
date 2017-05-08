@@ -10,6 +10,11 @@ class Movie
             exit('Database connection could not be established.');
         }
     }
+    public function getAllVideos(){
+        $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id");
+        return $show->fetchAll(PDO::FETCH_OBJ);
+    }
+
     public function get6PopulerVideos(){
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id ORDER BY MO.movie_view DESC LIMIT 6");
         return $show;
@@ -29,6 +34,11 @@ class Movie
     }
     public function getVideo($videoID){
         $show =  $this->db->query("SELECT * FROM as_movie WHERE movie_id = $videoID");
+        return $show;
+    }
+
+    public function getVideoByName($videoName){
+        $show =  $this->db->query("SELECT * FROM as_movie WHERE sef_link LIKE '%$videoName%' ");
         return $show;
     }
 
@@ -54,5 +64,22 @@ class Movie
     public function similarVideos($katID,$Limit){
         $show =  $this->db->query("SELECT * FROM as_movie MO INNER JOIN as_categories AC ON MO.category_id = AC.category_id WHERE MO.category_id = $katID ORDER BY RAND() LIMIT $Limit");
         return $show;
+    }
+
+    public function addVideo($video_name,$video_url,$video_category,$video_description,$video_sef_url){
+        $register = $this->db->prepare("INSERT INTO as_movie (movie_name,movie_description,movie_url,sef_link,category_id) VALUES ( :movie_name, :movie_description, :movie_url, :sef_link, :video_category)");
+        $register->execute(array(
+            ":movie_name" => $video_name,
+            ":movie_description" => $video_description,
+            ":movie_url" => $video_url,
+            ":sef_link" => $video_sef_url,
+            ":video_category" => $video_category
+        ));
+    }
+    public function deleteVideo($videoID){
+        $delete_category = $this->db->prepare("DELETE FROM as_movie WHERE movie_id = :id");
+        $delete_category->execute(array(
+            ':id' => $videoID,
+        ));
     }
 }
