@@ -102,7 +102,7 @@
                                     <td><a href="<?= URL . 'Video/' . $video->movie_id . '/' . $video->sef_link?>" target="_blank"><?=substr($video->movie_url,0,150)?></a></td>
                                     <td class="center"><?= $video->category_name?></td>
                                     <td class="center">
-                                        <button class="btn btn-info btn-xs">Edit</button>
+                                        <!-- <button class="btn btn-info btn-xs">Edit</button> -->
                                         <a href="<?= URL . 'yonetim/deleteVideo/' . $video->movie_id?>" class="btn btn-danger btn-xs">Delete</a>
                                     </td>
                                 </tr>

@@ -4,7 +4,7 @@ class App{
     /**
      * App sınıfının constructor methodu.
      */
-    protected $controller = 'home';
+    protected $controller = 'Home';
     protected $method = 'index';
     protected $params = array();
 
@@ -27,7 +27,7 @@ class App{
         // url segment 1 : controller
         if(file_exists('../app/controllers/' . ucfirst($url[0]) . '.php')){
             //echo $url[0] .  " controller dosyası var.";
-            $this->controller = $url[0];
+            $this->controller = ucfirst($url[0]);
             unset($url[0]);
         }//else olarak otomatik home'a gidiyor.
         require_once('../app/controllers/' . $this->controller . '.php');

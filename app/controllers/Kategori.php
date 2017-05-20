@@ -1,9 +1,5 @@
 <?php
 
-/**
- * The default home controller, called when no controller/method has been passed
- * to the application.
- */
 class Kategori extends Controller
 {
     public function index($kategoriID="",$kategoriAdi="")
